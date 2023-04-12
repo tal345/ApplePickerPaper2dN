@@ -65,12 +65,7 @@ AApplePickerPaper2dNCharacter::AApplePickerPaper2dNCharacter()
 	// behavior on the edge of a ledge versus inclines by setting this to true or false
 	GetCharacterMovement()->bUseFlatBaseForFloorChecks = true;
 
-    // 	TextComponent = CreateDefaultSubobject<UTextRenderComponent>(TEXT("IncarGear"));
-    // 	TextComponent->SetRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
-    // 	TextComponent->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
-    // 	TextComponent->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
-    // 	TextComponent->SetupAttachment(RootComponent);
-
+    
 	// Enable replication on the Sprite component so animations show up when networked
 	GetSprite()->SetIsReplicated(true);
 	bReplicates = true;
@@ -81,15 +76,7 @@ AApplePickerPaper2dNCharacter::AApplePickerPaper2dNCharacter()
 
 void AApplePickerPaper2dNCharacter::UpdateAnimation()
 {
-	//const FVector PlayerVelocity = GetVelocity();
-	//const float PlayerSpeedSqr = PlayerVelocity.SizeSquared();
-
-	// Are we moving or standing still?
-	//UPaperFlipbook* DesiredAnimation = (PlayerSpeedSqr > 0.0f) ? RunningAnimation : IdleAnimation;
-	//if( GetSprite()->GetFlipbook() != DesiredAnimation 	)
-	//{
-	//	GetSprite()->SetFlipbook(DesiredAnimation);
-	//}
+	
 }
 
 void AApplePickerPaper2dNCharacter::Tick(float DeltaSeconds)

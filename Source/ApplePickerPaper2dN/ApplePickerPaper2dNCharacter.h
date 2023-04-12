@@ -32,19 +32,7 @@ class AApplePickerPaper2dNCharacter : public APaperCharacter
 	UTextRenderComponent* TextComponent;
 	virtual void Tick(float DeltaSeconds) override;
 protected:
-	// The animation to play while running around
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Animations)
-	//class UPaperFlipbook* ThreeLives;
-
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
-		//class UPaperFlipbook* TwoLives;
-
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
-		//class UPaperFlipbook* TwoLives;
-	// The animation to play while idle (standing still)
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
-	//class UPaperFlipbook* IdleAnimation;
-
+	
 	/** Called to choose the correct animation to play based on the character's movement state */
 	void UpdateAnimation();
 

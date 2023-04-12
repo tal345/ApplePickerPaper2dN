@@ -48,8 +48,7 @@ void AEnemyProj::OnProjHit(UPrimitiveComponent* HitComponent, AActor* OtherActor
 {
 	if (OtherComp->ComponentHasTag("Floor"))
 	{
-		ProjMissed();
-		//GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::White, FString::Printf(TEXT("AEnemyProj::OnProjHit: Floor")));
+		ProjMissed();		
 	}
 	else
 	{

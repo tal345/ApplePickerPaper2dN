@@ -87,6 +87,5 @@ void AEnemyThrower::PauseEnemy()
 {
 	SetActorTickEnabled(false);
 	GetWorld()->GetTimerManager().PauseTimer(ShootTimer);
-	GetWorld()->GetTimerManager().PauseTimer(RanDirTimer);
-	
+	GetWorld()->GetTimerManager().PauseTimer(RanDirTimer);	
 }
